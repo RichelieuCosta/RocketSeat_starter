@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Curso Java Script</title>
+    </head>
+
+    <body>
+
+        <div id="app">
+            <div id="appbox" class="box">
+
+                <input id="nome" />
+
+            </div>
+        </div>
+
+        <script>
+            // praticando mais com a DOM 
+
+            var linkElement = document.createElement('a');
+
+            linkElement.setAttribute('href', 'http://rocketseat.com.br');
+            linkElement.setAttribute('title', 'Site da RocketSeat');
+
+            var textElement = document.createTextNode('Acessar site');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#appbox');
+
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('#nome');
+            containerElement.removeChild(inputElement);
+
+            var boxElement = document.querySelector('.box');
+
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
+
+        </script>
+
+   
+
+    </body>
+</html>

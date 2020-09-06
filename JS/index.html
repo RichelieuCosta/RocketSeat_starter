@@ -1,9 +1,18 @@
 <html>
     <head>
+        <meta charset="UTF-8"> 
         <title>Curso Java Script</title>
     </head>
     <body>
 
+        <div id="app">
+            <input type="text" name="nome" id="nome" class="nome"/>
+            <input type="text" name="nome" id="nome2" class="nome"/>
+            <button class="botao"> Adicionar</button>
+        </div>
+
+
+        <!--
         <script>
             // para reativar um bloco de comentado, basta adicionar uma barra '/' ao início da linha do bloco.
            /*   // praticando variáveis *****************************
@@ -14,7 +23,7 @@
             var nomes = ['Richelieu','Amalia', 'Agenor'];
             console.log(nome); // ou nome[0]
 
-            var nome = {
+            var nome = {git 
                 nome: nomes[1],
                 idade: 60,
                 peso: 'desconhecido',
@@ -151,5 +160,70 @@
 
             // javascript
         </script>
+        -->
+
+        <!--
+        <div id="app">
+            <button onmousedown="mostraAlerta()">Me Pressione</button>
+            <input onkeypress="mostraAlertaInput()" />
+        </div>
+
+        <script>
+            function mostraAlerta(){
+                alert('Botão foi clicado')
+            }
+            function mostraAlertaInput(){
+                alert('Tecla pressionada')
+            }
+        // JavaScript
+        </script>
+        -->
+        
+        
+        <script> // praticando com a DOM.
+
+            /* //obtendo elementos através de Get
+
+            //var inputElement = document.getElementById('nome');
+            //var inputElement = document.getElementByClassName('nome')[0];
+            var inputElement = document.getElementsByTagName('input')[0]; // Como eu usei '[0]', obrigatóriamente sempre retornará apenas o primeiro elemento
+            //caso eu não especifique qual elemento retornar, esse get retornará um vetor. 
+            console.log(inputElement);
+
+            var inputElement = document.getElementsByTagName('input');
+            console.log(inputElement);
+            //*/
+
+            /* //obtendo elementos da DOM através de querySelector
+
+            var inputElement = document.querySelector('div#app input');
+
+            console.log(inputElement);
+
+            var inputElement = document.querySelectorAll('input[name=nome]'); // querySelectorAll
+
+            console.log(inputElement);
+            // */
+
+            //* // atribuindo ações para os elementos através do JavaScript manipulando a DOM
+
+            var inputElement = document.querySelectorAll('div#app input[name=nome]')[0];
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function () {
+                var text = inputElement.value;
+                console.log(text);
+                alert('BOTÃO CLICADO');
+                
+            }
+            // */
+
+        // JavaScript
+        </script>
+        
+        
+
+        
+
     </body>
 </html>
