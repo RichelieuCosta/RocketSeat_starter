@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Curso Java Script</title>
+    </head>
+    <body>
+
+        <script>
+            // para reativar um bloco de comentado, basta adicionar uma barra '/' ao início da linha do bloco.
+           /*   // praticando variáveis *****************************
+           
+            var nome = 'diego';
+            console.log('olá mundo ' + nome);
+
+            var nomes = ['Richelieu','Amalia', 'Agenor'];
+            console.log(nome); // ou nome[0]
+
+            var nome = {
+                nome: nomes[1],
+                idade: 60,
+                peso: 'desconhecido',
+                humano: true
+            };
+            console.log(nome);
+            // */
+            
+            /* // praticando operações matemáticas *****************************
+
+            var x = 10, y = 5;
+            console.log(x, y);
+
+            var z = x + y;
+            console.log(z);
+            z *= x;
+            console.log(z);
+
+            var x = '10';
+            var z = x + y;
+            console.log(z);
+            // */
+
+            /* // praticando funções *****************************
+
+            function soma(num1, num2){
+
+                var resu = num1 + num2;
+                return resu;
+            }
+
+            var resu = soma(4,6);
+            console.log(resu);
+            // */
+
+            /* // praticando condicionais *****************************
+            function retornaGenero(gen){
+                // M, F
+                if (1 == '1'){
+                    console.log(true);
+                }
+                if (1 === '1'){
+                    console.log('never printed');
+                } else {
+                    console.log(false);
+                }
+                if (gen == 'M'){
+                    return 'Masculino';
+                } else if (gen == 'F') {
+                    return 'Feminino';
+                } else {
+                    return 'outro';
+                }
+                
+            }
+
+            var resu = retornaGenero('M');
+            console.log(resu);
+
+            function retornaGenero2(gen){
+                // M, F
+                switch (gen) {
+                    case 'M': 
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'outro';
+                }
+                
+            }
+
+            var resu = retornaGenero2('W');
+            console.log(resu);
+            // */
+
+            /* // praticando operadores lógicos *****************************
+
+            // AND, OR, NOT
+
+            var sexo = 'M', idade = 23;
+
+            if ( sexo === 'M' && idade >= 18){
+                console.log('Tanto faz :) (mas satisfez)')
+            }
+            if ( sexo === 'M' || idade === 18){
+                console.log('M')
+            }
+            if ( idade !== 10 ){
+                console.log(' SAME TYPE, BUT ANOTER VALUE')
+            }
+
+            var resu = (sexo !== 'F')
+            console.log(resu);
+            
+
+            // */
+
+             /* praticando condições ternárias *****************************
+
+            var sexo = 'M';
+
+            var resu = (sexo === 'M') ? 'Masculino' : 'Feminino';
+            console.log(resu);
+
+            // */
+
+            /* praticando estruturas de repetição ***************
+
+             for (var i = 0; i <= 100; i++){
+                 console.log(i);
+             }
+             var j=0;
+             while (j<= 100){
+                 console.log(j);
+                 j++;
+             }
+
+            // */
+
+            /* praticando intervalo e timeout ****************
+
+            function exibeAlgo() {
+                console.log('Olá mundo')
+
+
+
+            }
+
+             //setInterval(exibeAlgo, 1000);
+             setTimeout(exibeAlgo, 4000)
+
+            // */
+
+            // javascript
+        </script>
+    </body>
+</html>
