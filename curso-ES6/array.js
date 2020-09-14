@@ -1,21 +1,25 @@
 
 // ES5 ***********************************************
 // para esses e outros exemplos: https://www.w3schools.com/js/js_es5.asp
+function testeArray(){
 
-const arr = [1, 2, 3, 4, 5, 8, 9];
+  const arr = [1, 2, 3, 4, 5, 8, 9];
 
-const newArr = arr.map(function(item){
-    return item*2;
-})
+  const newArr = arr.map(function(item){
+      return item*2;
+  })
 
-const newArr2 = arr.map(multiplica2);
+  const newArr2 = arr.map(multiplica2);
+
+  console.log(newArr);
+  console.log(newArr2);
+}
 
 function multiplica2(value) {
   return value * 2;
 }
 
-console.log(newArr);
-console.log(newArr2);
+testeArray();
 
 function myFunction() {
     var fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -47,20 +51,20 @@ console.log(timInMSs);
 
 
 // ES5
-var m = function(x, y) {
+var functionM = function(x, y) {
     return x * y;
  }
 
-console.log(m(3,3));
+console.log(functionM(3,3));
  
 // ES6 *****************************************************
 // para mais exemplos: https://www.w3schools.com/js/js_es6.asp
 
-const m6 = (x, y=2) => x * y;
+const functionM6 = (x, y=2) => x * y;
 
 
-console.log(m6(3));
-console.log(m6(3,3));
+console.log(functionM6(3));
+console.log(functionM6(3,3));
 
 
 function ES6_exemple_escope(){
@@ -76,6 +80,8 @@ function ES6_exemple_escope(){
         // Here x is 2
 
         console.log(w);
+
+        console.log(`x vale ${x}, w vale ${w}, y vale ${y}`);
     }
     // Here x is 10
     // Here w doesn't exist. 

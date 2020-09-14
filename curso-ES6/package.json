@@ -9,6 +9,6 @@
     "@babel/preset-env": "^7.11.5"
   },
   "scripts": {
-    "dev": "babel ./main.js ./array.js ./desestruturacaoES6.js -o ./bundle.js -w"
+    "dev": "babel ./main.js ./array.js ./desestruturacaoES6.js ./rest.js ./spread.js -o ./bundle.js -w"
   }
 }
